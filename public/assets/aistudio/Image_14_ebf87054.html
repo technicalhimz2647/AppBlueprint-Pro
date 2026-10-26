@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="hi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 4.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#855300", "primary": "#ffc174", "on-tertiary-container": "#004e34", "on-secondary-fixed": "#001e2c", "on-surface-variant": "#d8c3ad", "on-secondary": "#00354a", "inverse-surface": "#d4e4fa", "on-tertiary": "#003824", "tertiary-fixed-dim": "#4edea3", "surface-container-high": "#1c2b3c", "surface-variant": "#273647", "secondary-fixed-dim": "#7bd0ff", "surface": "#051424", "surface-container-lowest": "#010f1f", "tertiary-fixed": "#6ffbbe", "surface-tint": "#ffb95f", "on-primary": "#472a00", "tertiary": "#56e5a9", "primary-fixed": "#ffddb8", "on-tertiary-fixed-variant": "#005236", "outline-variant": "#534434", "primary-fixed-dim": "#ffb95f", "on-primary-fixed": "#2a1700", "on-surface": "#d4e4fa", "surface-container-highest": "#273647", "on-tertiary-fixed": "#002113", "inverse-on-surface": "#233143", "error": "#ffb4ab", "secondary-fixed": "#c4e7ff", "surface-bright": "#2c3a4c", "surface-dim": "#051424", "primary-container": "#f59e0b", "on-secondary-fixed-variant": "#004c69", "on-primary-fixed-variant": "#653e00", "on-primary-container": "#613b00", "background": "#051424", "error-container": "#93000a", "on-error": "#690005", "tertiary-container": "#30c88f", "outline": "#a08e7a", "surface-container": "#122131", "surface-container-low": "#0d1c2d", "on-secondary-container": "#00374d", "on-error-container": "#ffdad6", "secondary": "#7bd0ff", "on-background": "#d4e4fa", "secondary-container": "#00a6e0" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "1.5rem", "gutter": "0.75rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-lg": "1rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-tablet": "1rem", "margin-tablet": "1.5rem" }, fontFamily: { "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Space Grotesk"], "title-sm": ["Plus Jakarta Sans"], "headline-lg": ["Space Grotesk"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"] }, fontSize: { "label-md": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "title-sm": ["14px", { lineHeight: "20px", fontWeight: "600" }], "headline-lg": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-lg": ["13px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "label-sm": ["10px", { lineHeight: "12px", letterSpacing: "0.05em", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "title-md": ["16px", { lineHeight: "22px", fontWeight: "600" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.12)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="logo-192.png" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XSmN40RTYV24NE-qPhHgjP5WKUTMhF6ioHDqcDAZDRFMEUzwSH3ZNn_9KmLi6PSeqFU2VRd7qq-j4eeq08c78ydil4z0wNVyMvN9nCffyS4OPE_GNgT4uGOwqJdhzwLj7urBOkmlQGnTray5R_nBWRnzaFAnhn3N0ge9LsZEvlCaaYUu11nxhLoVKOMlx1RnF0Yax6l78tGIwtJq28Tj7avvh2zA-aTjGTqCAhyrSlDf9xpss5wrU-7J98-YYbFqmoa3LEtiFEgA"/><div class="flex flex-col min-w-0 leading-tight"><div class="flex items-center gap-1.5"><h1 class="font-title-md text-title-md text-on-surface truncate tracking-tight">Notes</h1><span class="hidden xs:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-surface-container-high text-primary tracking-wide uppercase">2027</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">कक्षा 10वीं बोर्ड तैयारी</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-lg text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1 shadow-[0_0_12px_-2px_rgba(245,158,11,0.25)] shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-margin py-space-md gap-space-lg">
+<!-- Info Header Banner -->
+<section class="bg-surface-container rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_stories</span>
+<span class="font-label-md text-label-md text-primary tracking-wide uppercase">BSEB 2027 सिलेबस</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-semibold">
+        36+ अध्याय नोट्स
+      </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+      बिहार बोर्ड कक्षा 10वीं हिंदी — संपूर्ण सारांश, लेखक परिचय एवं प्रश्न-उत्तर
+    </p>
+<!-- Search Input & Quick Action Bar -->
+<div class="mt-space-md flex items-center gap-space-xs bg-surface-container-low rounded-lg px-space-md py-1.5">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0">search</span>
+<input class="bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline w-full focus:outline-none" id="notes-search-input" placeholder="अध्याय या लेखक खोजें..." type="text"/>
+<button aria-label="फिल्टर रीसेट" class="text-outline hover:text-on-surface hidden p-1" id="clear-search-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</section>
+<!-- Section: Book & Section Selector -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[20px]">library_books</span>
+<h2 class="font-title-sm text-title-sm text-on-surface">पुस्तक व खंड चयन (4 खंड)</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">मैट्रिक 100 अंक</span>
+</div>
+<!-- 2x2 Selector Grid -->
+<div aria-label="हिंदी पुस्तक खंड चयन" class="grid grid-cols-2 gap-space-sm" id="section-grid" role="radiogroup">
+<!-- Card 1: Active Selected State -->
+<button aria-checked="true" class="section-card text-left bg-surface-container-high rounded-xl p-space-md flex flex-col justify-between relative transition-all shadow-[0_0_16px_-2px_rgba(245,158,11,0.25)] min-h-[110px]" data-section="gadhya" role="radio" type="button">
+<div class="flex items-start justify-between w-full">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+</div>
+<div class="mt-space-sm">
+<h3 class="font-title-sm text-title-sm text-primary font-bold line-clamp-1">गोधूलि: गद्य खंड</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 text-[11px] leading-tight mt-0.5">12 अध्याय (कहानियाँ व निबंध)</p>
+<div class="mt-1.5 flex items-center gap-1">
+<span class="font-label-sm text-[9px] px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-bold">
+              सक्रिय • 12 पाठ
+            </span>
+</div>
+</div>
+</button>
+<!-- Card 2: Kavya Khand -->
+<button aria-checked="false" class="section-card text-left bg-surface-container rounded-xl p-space-md flex flex-col justify-between relative transition-all min-h-[110px] hover:bg-surface-container-high" data-section="kavya" role="radio" type="button">
+<div class="flex items-start justify-between w-full">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</div>
+<span class="font-label-sm text-[9px] px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-semibold">
+            12 पाठ
+          </span>
+</div>
+<div class="mt-space-sm">
+<h3 class="font-title-sm text-title-sm text-on-surface font-semibold line-clamp-1">गोधूलि: काव्य खंड</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 text-[11px] leading-tight mt-0.5">12 अध्याय (कविताएं व पद)</p>
+<span class="font-label-sm text-[10px] text-secondary-fixed-dim mt-1.5 inline-block">पद्य व दोहे</span>
+</div>
+</button>
+<!-- Card 3: Varnika Part 2 -->
+<button aria-checked="false" class="section-card text-left bg-surface-container rounded-xl p-space-md flex flex-col justify-between relative transition-all min-h-[110px] hover:bg-surface-container-high" data-section="varnika" role="radio" type="button">
+<div class="flex items-start justify-between w-full">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">import_contacts</span>
+</div>
+<span class="font-label-sm text-[9px] px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-semibold">
+            5 पाठ
+          </span>
+</div>
+<div class="mt-space-sm">
+<h3 class="font-title-sm text-title-sm text-on-surface font-semibold line-clamp-1">वर्णिका भाग 2</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 text-[11px] leading-tight mt-0.5">5 कहानियां (पूरक पुस्तक)</p>
+<span class="font-label-sm text-[10px] text-tertiary mt-1.5 inline-block">दही वाली मंगम्मा आदि</span>
+</div>
+</button>
+<!-- Card 4: Subjective Writing -->
+<button aria-checked="false" class="section-card text-left bg-surface-container rounded-xl p-space-md flex flex-col justify-between relative transition-all min-h-[110px] hover:bg-surface-container-high" data-section="writing" role="radio" type="button">
+<div class="flex items-start justify-between w-full">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</div>
+<span class="font-label-sm text-[9px] px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-semibold">
+            7 प्रारूप
+          </span>
+</div>
+<div class="mt-space-sm">
+<h3 class="font-title-sm text-title-sm text-on-surface font-semibold line-clamp-1">सब्जेक्टिव लेखन</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 text-[11px] leading-tight mt-0.5">पत्र, निबंध, गद्यांश व संवाद</p>
+<span class="font-label-sm text-[10px] text-primary-fixed-dim mt-1.5 inline-block">25 अंक पक्के</span>
+</div>
+</button>
+</div>
+</section>
+<!-- Chapter List Section for Active Book -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">गद्य खंड अध्याय सूची</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">12 अध्याय • सम्पूर्ण परीक्षा उपयोगी नोट्स</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">12/12</span>
+</div>
+<!-- Filter Pills Scrollable -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 -mx-margin px-margin no-scrollbar" id="genre-filters">
+<button class="filter-pill shrink-0 px-3 py-1 rounded-full font-label-md text-label-md bg-primary-container text-on-primary font-bold transition-colors" data-filter="all" type="button">
+        सभी 12 पाठ
+      </button>
+<button class="filter-pill shrink-0 px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-filter="निबंध" type="button">
+        निबंध (5)
+      </button>
+<button class="filter-pill shrink-0 px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-filter="कहानी" type="button">
+        कहानी (4)
+      </button>
+<button class="filter-pill shrink-0 px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-filter="भाषण" type="button">
+        भाषण व ललित (3)
+      </button>
+</div>
+<!-- Chapter Cards Stream -->
+<div class="flex flex-col gap-space-md" id="chapter-list">
+<!-- Chapter 1 -->
+<article class="chapter-item bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm transition-all hover:bg-surface-container-high shadow-sm" data-author="भीमराव अंबेडकर" data-genre="निबंध" data-title="श्रम विभाजन और जाति प्रथा">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-0.5 flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded font-bold bg-primary-container text-on-primary">
+                पाठ 1
+              </span>
+<span class="font-label-sm text-label-sm text-primary">निबंध</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-snug mt-1">
+              श्रम विभाजन और जाति प्रथा
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+              लेखक: डॉ. भीमराव अंबेडकर
+            </p>
+</div>
+<div class="shrink-0 flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+              VVI
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest/60 rounded-lg px-2.5 py-1.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+            8 मिनट पठन
+          </span>
+<span class="w-1 h-1 rounded-full bg-surface-variant"></span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">quiz</span>
+            15 लघु व दीर्घ प्रश्नोत्तर
+          </span>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 min-h-[38px] rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+            सारांश
+          </button>
+<button class="flex-1 min-h-[38px] rounded-lg bg-primary-container hover:opacity-95 text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-[0_0_12px_rgba(245,158,11,0.2)] transition-opacity" type="button">
+<span class="material-symbols-outlined text-[18px]">assignment</span>
+            प्रश्न-उत्तर ›
+          </button>
+</div>
+</article>
+<!-- Chapter 2 -->
+<article class="chapter-item bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm transition-all hover:bg-surface-container-high shadow-sm" data-author="नलिन विलोचन शर्मा" data-genre="कहानी" data-title="विष के दांत">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-0.5 flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded font-bold bg-primary-container text-on-primary">
+                पाठ 2
+              </span>
+<span class="font-label-sm text-label-sm text-secondary">कहानी</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-snug mt-1">
+              विष के दांत
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+              लेखक: नलिन विलोचन शर्मा
+            </p>
+</div>
+<div class="shrink-0 flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">star</span>
+              महत्वपूर्ण
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest/60 rounded-lg px-2.5 py-1.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+            10 मिनट पठन
+          </span>
+<span class="w-1 h-1 rounded-full bg-surface-variant"></span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">quiz</span>
+            12 लघु व दीर्घ प्रश्नोत्तर
+          </span>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 min-h-[38px] rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+            सारांश
+          </button>
+<button class="flex-1 min-h-[38px] rounded-lg bg-primary-container hover:opacity-95 text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-[0_0_12px_rgba(245,158,11,0.2)] transition-opacity" type="button">
+<span class="material-symbols-outlined text-[18px]">assignment</span>
+            प्रश्न-उत्तर ›
+          </button>
+</div>
+</article>
+<!-- Chapter 3 -->
+<article class="chapter-item bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm transition-all hover:bg-surface-container-high shadow-sm" data-author="मैक्स मूलर" data-genre="भाषण" data-title="भारत से हम क्या सीखें">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-0.5 flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded font-bold bg-primary-container text-on-primary">
+                पाठ 3
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary">भाषण</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-snug mt-1">
+              भारत से हम क्या सीखें
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+              लेखक: मैक्स मूलर
+            </p>
+</div>
+<div class="shrink-0 flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">bookmark</span>
+              बोर्ड मॉडल
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest/60 rounded-lg px-2.5 py-1.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+            9 मिनट पठन
+          </span>
+<span class="w-1 h-1 rounded-full bg-surface-variant"></span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">quiz</span>
+            14 लघु व दीर्घ प्रश्नोत्तर
+          </span>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 min-h-[38px] rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+            सारांश
+          </button>
+<button class="flex-1 min-h-[38px] rounded-lg bg-primary-container hover:opacity-95 text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-[0_0_12px_rgba(245,158,11,0.2)] transition-opacity" type="button">
+<span class="material-symbols-outlined text-[18px]">assignment</span>
+            प्रश्न-उत्तर ›
+          </button>
+</div>
+</article>
+<!-- Chapter 4 -->
+<article class="chapter-item bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm transition-all hover:bg-surface-container-high shadow-sm" data-author="हजारी प्रसाद द्विवेदी" data-genre="निबंध" data-title="नाखून क्यों बढ़ते हैं">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-0.5 flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded font-bold bg-primary-container text-on-primary">
+                पाठ 4
+              </span>
+<span class="font-label-sm text-label-sm text-primary">ललित निबंध</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-snug mt-1">
+              नाखून क्यों बढ़ते हैं
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+              लेखक: आचार्य हजारी प्रसाद द्विवेदी
+            </p>
+</div>
+<div class="shrink-0 flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+              VVI
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest/60 rounded-lg px-2.5 py-1.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+            7 मिनट पठन
+          </span>
+<span class="w-1 h-1 rounded-full bg-surface-variant"></span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">quiz</span>
+            11 लघु व दीर्घ प्रश्नोत्तर
+          </span>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 min-h-[38px] rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+            सारांश
+          </button>
+<button class="flex-1 min-h-[38px] rounded-lg bg-primary-container hover:opacity-95 text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-[0_0_12px_rgba(245,158,11,0.2)] transition-opacity" type="button">
+<span class="material-symbols-outlined text-[18px]">assignment</span>
+            प्रश्न-उत्तर ›
+          </button>
+</div>
+</article>
+</div>
+</section>
+<!-- Motivational Board Examination Tip Banner -->
+<section class="bg-surface-container-high rounded-xl p-space-md flex items-start gap-space-sm relative overflow-hidden shadow-sm mb-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-primary font-bold tracking-wide uppercase">बोर्ड परीक्षा टिप</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+        गद्य खंड से प्रत्येक वर्ष 10 अंक के विषयनिष्ठ (लघु उत्तरीय) प्रश्न पूछे जाते हैं। प्रत्येक अध्याय का मुख्य सारांश और लेखक का जीवन परिचय अवश्य याद करें।
+      </p>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interactions for section selector and filter pills
+  (function() {
+    const searchInput = document.getElementById('notes-search-input');
+    const clearBtn = document.getElementById('clear-search-btn');
+    const chapterCards = document.querySelectorAll('.chapter-item');
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const sectionCards = document.querySelectorAll('.section-card');
+
+    // Section Selector Active State Toggle
+    sectionCards.forEach(card => {
+      card.addEventListener('click', () => {
+        sectionCards.forEach(c => {
+          c.setAttribute('aria-checked', 'false');
+          c.classList.remove('bg-surface-container-high', 'shadow-[0_0_16px_-2px_rgba(245,158,11,0.25)]');
+          c.classList.add('bg-surface-container');
+          
+          const icon = c.querySelector('.material-symbols-outlined.text-primary-container');
+          if (icon && icon.textContent === 'check_circle') {
+            icon.remove();
+          }
+          const title = c.querySelector('h3');
+          if (title) title.classList.remove('text-primary');
+        });
+
+        card.setAttribute('aria-checked', 'true');
+        card.classList.remove('bg-surface-container');
+        card.classList.add('bg-surface-container-high', 'shadow-[0_0_16px_-2px_rgba(245,158,11,0.25)]');
+        
+        const title = card.querySelector('h3');
+        if (title) title.classList.add('text-primary');
+      });
+    });
+
+    // Genre Filtering
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => {
+          p.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+          p.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+
+        pill.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        pill.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+
+        const filter = pill.getAttribute('data-filter');
+        chapterCards.forEach(card => {
+          const genre = card.getAttribute('data-genre') || '';
+          if (filter === 'all' || genre.includes(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Realtime Search
+    searchInput.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      clearBtn.classList.toggle('hidden', q === '');
+
+      chapterCards.forEach(card => {
+        const title = (card.getAttribute('data-title') || '').toLowerCase();
+        const author = (card.getAttribute('data-author') || '').toLowerCase();
+        if (title.includes(q) || author.includes(q)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      clearBtn.classList.add('hidden');
+      chapterCards.forEach(card => card.style.display = 'flex');
+      searchInput.focus();
+    });
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.2)] pb-[env(safe-area-inset-bottom,0px)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors group" data-path="home" href="#"><span class="material-symbols-outlined text-[24px] mb-0.5 group-hover:scale-105 transition-transform">home</span><span class="font-label-sm text-label-sm">होम</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors group" data-path="tests" href="#"><span class="material-symbols-outlined text-[24px] mb-0.5 group-hover:scale-105 transition-transform">quiz</span><span class="font-label-sm text-label-sm">टेस्ट</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 transition-colors relative group text-primary-container font-semibold" data-path="notes" href="#"><span class="material-symbols-outlined text-[24px] mb-0.5 group-hover:scale-105 transition-transform">menu_book</span><span class="font-label-sm text-label-sm">नोट्स</span><span class="absolute bottom-1 w-1 h-1 rounded-full bg-primary-container shadow-[0_0_8px_rgba(245,158,11,0.6)]"></span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors group" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px] mb-0.5 group-hover:scale-105 transition-transform">account_circle</span><span class="font-label-sm text-label-sm">प्रोफाइल</span></a></div></nav></body></html>

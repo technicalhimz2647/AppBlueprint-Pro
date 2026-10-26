@@ -1,0 +1,482 @@
+<!DOCTYPE html><html class="dark" lang="hi"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="shell-type" content="mobile_stack">
+  <title>पाठ 1 नोट्स व प्रश्न-उत्तर - बिहार मैट्रिक 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#051424",
+            "surface-container-lowest": "#010f1f",
+            "surface-container-low": "#0d1c2d",
+            "surface-container": "#122131",
+            "surface-container-high": "#1c2b3c",
+            "surface-container-highest": "#273647",
+            "surface-bright": "#2c3a4c",
+            "primary": "#ffc174",
+            "primary-container": "#f59e0b",
+            "on-primary": "#472a00",
+            "on-surface": "#d4e4fa",
+            "on-surface-variant": "#d8c3ad",
+            "secondary": "#7bd0ff",
+            "secondary-container": "#00a6e0",
+            "tertiary": "#56e5a9",
+            "tertiary-container": "#10b981",
+            "outline": "#a08e7a",
+            "outline-variant": "#534434"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk", "sans-serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background-color: #051424;
+      }
+      body {
+        overscroll-behavior-y: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    .pb-safe {
+      padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 5rem);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary">
+
+  <!-- Fixed Top Header -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-[#051424]/90 backdrop-blur-xl border-b border-surface-container-high/60 shadow-md">
+    <div class="h-16 px-4 flex items-center justify-between gap-2 max-w-md mx-auto">
+      <div class="flex items-center gap-2.5 min-w-0 flex-1">
+        <a href="#" class="w-9 h-9 rounded-lg bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface shrink-0 transition-colors" aria-label="अध्याय सूची पर वापस जाएं">
+          <span class="material-symbols-outlined text-[22px]">arrow_back</span>
+        </a>
+        <div class="flex flex-col min-w-0">
+          <div class="flex items-center gap-1.5">
+            <span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-primary-container/20 text-primary uppercase tracking-wide">PRASHN UTTAR WALA PAGE DESIGN KARO <br>गोधूलि गद्य</span>
+            <span class="text-[11px] text-tertiary font-semibold flex items-center gap-0.5">
+              <span class="material-symbols-outlined text-[13px]">verified</span> BSEB 2027
+            </span>
+          </div>
+          <h1 class="text-[15px] font-bold text-on-surface truncate leading-tight">
+            पाठ 1: श्रम विभाजन और जाति प्रथा
+          </h1>
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="flex items-center gap-1 shrink-0">
+        <button id="font-size-btn" aria-label="फॉन्ट आकार बदलें" class="w-9 h-9 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high flex items-center justify-center transition-colors">
+          <span class="material-symbols-outlined text-[20px]">format_size</span>
+        </button>
+        <button id="bookmark-btn" aria-label="बुकमार्क करें" class="w-9 h-9 rounded-lg text-primary-container hover:bg-surface-container-high flex items-center justify-center transition-colors">
+          <span class="material-symbols-outlined text-[22px]" style="font-variation-settings: &quot;FILL&quot; 1;">bookmark</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Sticky 2-Mode Segmented Switcher -->
+    <div class="px-4 pb-2.5 max-w-md mx-auto">
+      <div class="p-1 bg-surface-container-lowest/80 rounded-xl flex items-center gap-1 border border-surface-container-high/50" role="tablist">
+        <button id="tab-summary" role="tab" aria-selected="true" class="flex-1 py-2 px-2 rounded-lg font-bold text-[12px] flex items-center justify-center gap-1.5 transition-all bg-primary-container text-on-primary shadow-[0_2px_10px_rgba(245,158,11,0.25)]">
+          <span class="material-symbols-outlined text-[17px]">auto_stories</span>
+          <span class="">सारांश व परिचय</span>
+        </button>
+        <button id="tab-qa" role="tab" aria-selected="false" class="flex-1 py-2 px-2 rounded-lg font-semibold text-[12px] flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-on-surface">
+          <span class="material-symbols-outlined text-[17px]">assignment</span>
+          <span class="">प्रश्नोत्तर (Q&amp;A)</span>
+          <span class="ml-0.5 px-1.5 py-0.2 text-[9px] rounded-full bg-surface-container-highest text-primary font-bold">15</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Scrollable Content Container -->
+  <main class="flex-1 flex flex-col relative w-full pt-[124px] pb-safe max-w-md mx-auto px-4">
+    
+    <!-- MODE 1: SUMMARY & AUTHOR INTRO (Default Active) -->
+    <div id="content-summary" class="flex flex-col gap-4">
+      
+      <!-- Author Profile Card with Saffron Left Accent -->
+      <section class="bg-surface-container rounded-2xl p-4 shadow-sm border border-surface-container-high/40 relative overflow-hidden">
+        <div class="flex items-center gap-2 mb-2.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-primary">लेखक जीवन परिचय • बोर्ड स्पेशल</span>
+        </div>
+
+        <div class="border-l-4 border-primary-container bg-surface-container-lowest/60 rounded-r-xl p-3.5 flex flex-col gap-2">
+          <div class="flex items-start justify-between">
+            <div>
+              <h2 class="text-[17px] font-bold text-on-surface leading-tight">डॉ. भीमराव अंबेडकर</h2>
+              <p class="text-[12px] text-on-surface-variant mt-0.5">संविधान निर्माता एवं महान समाज सुधारक</p>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary-container/15 text-primary border border-primary/20 shrink-0">
+              जन्म: 1891
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 gap-2 pt-1 border-t border-surface-container-high/50 text-[12px]">
+            <div class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">calendar_month</span>
+              <span class="text-on-surface"><strong class="text-on-surface-variant font-medium">जन्म तिथि व स्थान:</strong> 14 अप्रैल 1891, महू (मध्य प्रदेश) एक दलित परिवार में।</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">menu_book</span>
+              <span class="text-on-surface"><strong class="text-on-surface-variant font-medium">प्रमुख रचनाएं:</strong> <em>द कास्ट्स इन इंडिया</em>, <em>एनिहिलेशन ऑफ कास्ट</em>, <em>हू आर शूद्राज</em>, <em>बुद्धा एंड हिज धम्मा</em>।</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">history_edu</span>
+              <span class="text-on-surface"><strong class="text-on-surface-variant font-medium">पाठ का स्रोत:</strong> यह निबंध अंबेडकर जी के विख्यात भाषण <em>'Annihilation of Caste'</em> का ललई सिंह यादव द्वारा किया गया हिंदी रूपांतरण है।</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chapter Detailed Summary Card -->
+      <section class="bg-surface-container rounded-2xl p-4 shadow-sm border border-surface-container-high/40 flex flex-col gap-3">
+        <div class="flex items-center justify-between pb-2 border-b border-surface-container-high/50">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container">
+              <span class="material-symbols-outlined text-[18px]">article</span>
+            </div>
+            <h3 class="text-[15px] font-bold text-on-surface">पाठ का मुख्य सारांश (Concept Notes)</h3>
+          </div>
+          <span class="text-[11px] font-medium text-tertiary bg-tertiary-container/10 px-2 py-0.5 rounded-full">
+            100% परीक्षा उपयोगी
+          </span>
+        </div>
+
+        <div class="space-y-3 text-[13px] leading-relaxed text-on-surface">
+          <!-- Point 1 -->
+          <div class="flex items-start gap-2.5 p-2.5 rounded-xl bg-surface-container-low">
+            <span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5">1</span>
+            <div>
+              <h4 class="font-bold text-primary text-[13px]">आधुनिक युग में जातिवाद की विडंबना:</h4>
+              <p class="text-on-surface-variant mt-0.5">
+                लेखक के अनुसार, 21वीं सदी के वैज्ञानिक युग में भी जातिवाद के समर्थकों की कोई कमी नहीं होना एक बहुत बड़ी विडंबना है। जातिवादी विचारक इसे "कार्यकुशलता के लिए आवश्यक श्रम विभाजन" कहकर इसका बचाव करते हैं।
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 2 -->
+          <div class="flex items-start gap-2.5 p-2.5 rounded-xl bg-surface-container-low">
+            <span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5">2</span>
+            <div>
+              <h4 class="font-bold text-secondary text-[13px]">श्रम विभाजन और श्रमिकों का अस्वाभाविक विभाजन:</h4>
+              <p class="text-on-surface-variant mt-0.5">
+                सभ्य समाज में श्रम विभाजन होना स्वाभाविक है, परंतु भारतीय जाति प्रथा केवल श्रम का ही विभाजन नहीं करती बल्कि <strong>श्रमिकों को एक-दूसरे से ऊंच-नीच के अस्वाभाविक वर्गों में भी बांट देती है</strong>, जो विश्व के किसी अन्य समाज में नहीं पाया जाता।
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 3 -->
+          <div class="flex items-start gap-2.5 p-2.5 rounded-xl bg-surface-container-low">
+            <span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5">3</span>
+            <div>
+              <h4 class="font-bold text-tertiary text-[13px]">व्यक्तिगत रुचि एवं अनिच्छा का संकट:</h4>
+              <p class="text-on-surface-variant mt-0.5">
+                जाति प्रथा में मनुष्य को जन्म से ही माता-पिता के सामाजिक स्तर के अनुसार पूर्व-निर्धारित पेशे से बांध दिया जाता है। रुचि न होने पर भी पेशा बदलने की अनुमति न होने से उद्योग-धंधों में बेबसी, भुखमरी और बेरोजगारी पैदा होती है।
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 4 -->
+          <div class="flex items-start gap-2.5 p-2.5 rounded-xl bg-surface-container-low">
+            <span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5">4</span>
+            <div>
+              <h4 class="font-bold text-primary-fixed-dim text-[13px]">आदर्श समाज और सच्चे भाईचारे का स्वरूप:</h4>
+              <p class="text-on-surface-variant mt-0.5">
+                डॉ. अंबेडकर के अनुसार एक आदर्श समाज <strong>स्वतंत्रता, समता और भ्रातृत्व (भाईचारे)</strong> पर आधारित होना चाहिए। सच्चा भाईचारा ठीक उसी तरह होना चाहिए जैसे <em>दूध और पानी का अटूट मिश्रण</em> होता है। इसे ही बाबा साहेब वास्तविक लोकतंत्र कहते हैं।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Revision Tip Box -->
+        <div class="bg-primary-container/10 border border-primary-container/30 rounded-xl p-3 flex items-start gap-2.5 mt-1">
+          <span class="material-symbols-outlined text-primary-container text-[20px] shrink-0 mt-0.5" style="font-variation-settings: &quot;FILL&quot; 1;">tips_and_updates</span>
+          <div class="text-[12px] leading-snug">
+            <span class="font-bold text-primary">मैट्रिक बोर्ड परीक्षा सूत्र:</span>
+            <p class="text-on-surface-variant mt-0.5">इस अध्याय से वस्तुनिष्ठ में "अंबेडकर जी का जन्म स्थान" और विषयनिष्ठ में "दूध-पानी का मिश्रण उपमा" हर 2 वर्ष में दोहराया जाता है।</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Switch CTA banner to Q&A -->
+      <section class="bg-surface-container-high rounded-xl p-3 flex items-center justify-between border border-surface-container-highest">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[20px]">quiz</span>
+          <span class="text-[12px] text-on-surface font-medium">सारांश पढ़ लिया? अब प्रश्नोत्तर याद करें</span>
+        </div>
+        <button id="inline-switch-qa" class="px-3 py-1.5 rounded-lg bg-surface-bright hover:bg-primary-container hover:text-on-primary text-primary text-[11px] font-bold flex items-center gap-1 transition-colors">
+          प्रश्नोत्तर देखें ›
+        </button>
+      </section>
+
+    </div>
+
+    <!-- MODE 2: SUBJECTIVE QUESTION-ANSWERS (Q&A Mode) -->
+    <div id="content-qa" class="hidden flex-col gap-4">
+
+      <!-- Q&A Filter bar -->
+      <div class="flex items-center justify-between bg-surface-container rounded-xl p-2.5 border border-surface-container-high/40">
+        <div class="flex items-center gap-1.5">
+          <span class="text-[12px] font-bold text-on-surface">श्रेणी:</span>
+          <button class="qa-filter active px-2.5 py-1 rounded-lg text-[11px] font-bold bg-primary-container text-on-primary">सभी (15)</button>
+          <button class="qa-filter px-2.5 py-1 rounded-lg text-[11px] font-medium bg-surface-container-high text-on-surface-variant">लघु उत्तरीय (2 अंक)</button>
+          <button class="qa-filter px-2.5 py-1 rounded-lg text-[11px] font-medium bg-surface-container-high text-on-surface-variant">दीर्घ (5 अंक)</button>
+        </div>
+        <span class="text-[11px] text-tertiary font-bold">VVI 2027</span>
+      </div>
+
+      <!-- Question 1: 2 Marks Short Answer (BSEB Frequent) -->
+      <article class="bg-surface-container rounded-2xl p-4 shadow-sm border border-surface-container-high/40 flex flex-col gap-2.5">
+        <div class="flex items-start justify-between gap-2">
+          <div class="flex items-center gap-1.5 flex-wrap">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary-container text-on-primary">
+              लघु उत्तरीय प्रश्न
+            </span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-surface-container-high text-tertiary">
+              2 अंक
+            </span>
+            <span class="text-[10px] text-on-surface-variant font-medium">BSEB 2018, 2022, 2024</span>
+          </div>
+          <span class="material-symbols-outlined text-[18px] text-tertiary" title="अति महत्वपूर्ण प्रश्न">verified</span>
+        </div>
+
+        <h3 class="text-[14px] font-bold text-on-surface leading-snug">
+          प्र. 1: लेखक किस विडंबना की बात करते हैं? विडंबना का स्वरूप क्या है?
+        </h3>
+
+        <!-- Answer Box with Emerald tint -->
+        <div class="bg-surface-container-low/90 border border-tertiary-container/30 rounded-xl p-3.5 mt-1 flex flex-col gap-1.5">
+          <div class="flex items-center gap-1.5 text-tertiary text-[11px] font-bold uppercase tracking-wide">
+            <span class="material-symbols-outlined text-[15px]">check_circle</span>
+            आदर्श बोर्ड उत्तर:
+          </div>
+          <p class="text-[13px] text-on-surface leading-relaxed">
+            <strong>उत्तर:</strong> लेखक बाबा साहेब डॉ. भीमराव अंबेडकर के अनुसार इस आधुनिक युग में भी 'जातिवाद के पोषकों की कमी नहीं होना' ही सबसे बड़ी विडंबना है। 
+          </p>
+          <p class="text-[13px] text-on-surface leading-relaxed text-on-surface-variant">
+            विडंबना का स्वरूप यह है कि आधुनिक सभ्य समाज कार्यकुशलता के नाम पर श्रम विभाजन को आवश्यक मानता है, परंतु जाति प्रथा केवल श्रम का विभाजन नहीं करती, बल्कि श्रमिकों का भी अस्वाभाविक एवं ऊंच-नीच के स्तरों में विभाजन कर देती है, जो किसी भी सभ्य समाज के लिए अनुचित है।
+          </p>
+        </div>
+      </article>
+
+      <!-- Question 2: 2 Marks Short Answer -->
+      <article class="bg-surface-container rounded-2xl p-4 shadow-sm border border-surface-container-high/40 flex flex-col gap-2.5">
+        <div class="flex items-start justify-between gap-2">
+          <div class="flex items-center gap-1.5 flex-wrap">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary-container text-on-primary">
+              लघु उत्तरीय प्रश्न
+            </span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-surface-container-high text-tertiary">
+              2 अंक
+            </span>
+            <span class="text-[10px] text-on-surface-variant font-medium">BSEB 2019, 2021</span>
+          </div>
+          <span class="material-symbols-outlined text-[18px] text-primary" title="स्टार प्रश्न">star</span>
+        </div>
+
+        <h3 class="text-[14px] font-bold text-on-surface leading-snug">
+          प्र. 2: जातिवाद के पोषक उसके पक्ष में क्या तर्क देते हैं?
+        </h3>
+
+        <div class="bg-surface-container-low/90 border border-tertiary-container/30 rounded-xl p-3.5 mt-1 flex flex-col gap-1.5">
+          <div class="flex items-center gap-1.5 text-tertiary text-[11px] font-bold uppercase tracking-wide">
+            <span class="material-symbols-outlined text-[15px]">check_circle</span>
+            आदर्श बोर्ड उत्तर:
+          </div>
+          <p class="text-[13px] text-on-surface leading-relaxed">
+            <strong>उत्तर:</strong> जातिवाद के समर्थक इसके पक्ष में यह मुख्य तर्क देते हैं कि किसी भी आधुनिक और सभ्य समाज में सुचारू रूप से कार्य चलाने के लिए 'श्रम विभाजन' अति आवश्यक है। चूंकि जाति प्रथा भी श्रम विभाजन का ही दूसरा रूप है, इसलिए इसमें कोई दोष या बुराई नहीं है।
+          </p>
+        </div>
+      </article>
+
+      <!-- Question 3: 2 Marks Short Answer (Doodh-Pani Metaphor) -->
+      <article class="bg-surface-container rounded-2xl p-4 shadow-sm border border-surface-container-high/40 flex flex-col gap-2.5">
+        <div class="flex items-start justify-between gap-2">
+          <div class="flex items-center gap-1.5 flex-wrap">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary-container text-on-primary">
+              लघु उत्तरीय प्रश्न
+            </span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-surface-container-high text-tertiary">
+              2 अंक
+            </span>
+            <span class="text-[10px] text-primary font-bold">VVI 100%</span>
+          </div>
+          <span class="material-symbols-outlined text-[18px] text-tertiary">verified</span>
+        </div>
+
+        <h3 class="text-[14px] font-bold text-on-surface leading-snug">
+          प्र. 3: लेखक की दृष्टि में सच्चे भाईचारे और लोकतंत्र का वास्तविक स्वरूप क्या है?
+        </h3>
+
+        <div class="bg-surface-container-low/90 border border-tertiary-container/30 rounded-xl p-3.5 mt-1 flex flex-col gap-1.5">
+          <div class="flex items-center gap-1.5 text-tertiary text-[11px] font-bold uppercase tracking-wide">
+            <span class="material-symbols-outlined text-[15px]">check_circle</span>
+            आदर्श बोर्ड उत्तर:
+          </div>
+          <p class="text-[13px] text-on-surface leading-relaxed">
+            <strong>उत्तर:</strong> लेखक के अनुसार सच्चे भाईचारे का वास्तविक स्वरूप <strong>दूध और पानी के मिश्रण</strong> की तरह अटूट और सहज होना चाहिए। जिस तरह दूध और पानी आपस में मिलकर एकरूप हो जाते हैं, उसी तरह समाज में लोगों के बीच परस्पर सहयोग व आत्मीयता होनी चाहिए। इसी सामूहिक जीवनचर्या की रीति और अनुभवों के आदान-प्रदान को अंबेडकर जी वास्तविक लोकतंत्र कहते हैं।
+          </p>
+        </div>
+      </article>
+
+      <!-- Question 4: 5 Marks Long Subjective Question -->
+      <article class="bg-surface-container rounded-2xl p-4 shadow-sm border border-surface-container-high/40 flex flex-col gap-2.5">
+        <div class="flex items-start justify-between gap-2">
+          <div class="flex items-center gap-1.5 flex-wrap">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary-container text-on-surface">
+              दीर्घ उत्तरीय प्रश्न
+            </span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-primary-container/20 text-primary">
+              5 अंक
+            </span>
+            <span class="text-[10px] text-on-surface-variant font-medium">BSEB 2020, 2023</span>
+          </div>
+          <span class="material-symbols-outlined text-[18px] text-secondary">workspace_premium</span>
+        </div>
+
+        <h3 class="text-[14px] font-bold text-on-surface leading-snug">
+          प्र. 4: 'जाति प्रथा भारत में बेरोजगारी का एक प्रमुख और प्रत्यक्ष कारण कैसे बनी हुई है?' स्पष्ट करें।
+        </h3>
+
+        <div class="bg-surface-container-low/90 border border-secondary-container/30 rounded-xl p-3.5 mt-1 flex flex-col gap-2">
+          <div class="flex items-center gap-1.5 text-secondary text-[11px] font-bold uppercase tracking-wide">
+            <span class="material-symbols-outlined text-[15px]">menu_book</span>
+            मुख्य बिंदुवार 5 अंकीय समाधान:
+          </div>
+          <p class="text-[13px] text-on-surface leading-relaxed">
+            <strong>उत्तर:</strong> जाति प्रथा भारत में बेरोजगारी का एक प्रमुख और प्रत्यक्ष कारण निम्नलिखित आधारों पर बनी हुई है:
+          </p>
+          <ul class="text-[12px] text-on-surface-variant space-y-1.5 list-disc list-inside">
+            <li class=""><strong class="text-on-surface">जन्मजात पेशा बंधन:</strong> मनुष्य को अपनी रुचि और योग्यता के अनुसार नया पेशा चुनने की स्वतंत्रता नहीं मिलती।</li>
+            <li class=""><strong class="text-on-surface">उद्योग-धंधों में तकनीकी परिवर्तन:</strong> जब तकनीक में बदलाव के कारण पुराना पैतृक पेशा बेकार हो जाता है, तो पेशा न बदल पाने की स्थिति में व्यक्ति बेरोजगार और भूखा रहने को विवश हो जाता है।</li>
+            <li class=""><strong class="text-on-surface">अनिच्छा और अरुचि का कार्य:</strong> विवशतावश काम करने से मनुष्य की कार्यक्षमता और मानसिक लगन समाप्त हो जाती है।</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- Sticky Bottom Practice Action Dock -->
+  <footer class="fixed bottom-0 inset-x-0 z-50 bg-[#051424]/95 backdrop-blur-xl border-t border-surface-container-high/70 p-3 shadow-[0_-4px_16px_rgba(0,0,0,0.3)]">
+    <div class="max-w-md mx-auto flex items-center gap-2.5">
+      <div class="flex flex-col min-w-0 flex-1">
+        <span class="text-[10px] font-semibold text-on-surface-variant flex items-center gap-1 truncate">
+          <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 100 वस्तुनिष्ठ प्रश्न तैयार
+        </span>
+        <span class="text-[12px] font-bold text-on-surface truncate">नोट्स पढ़ लिए? परीक्षा अभ्यास करें</span>
+      </div>
+
+      <a href="#" class="px-4 py-2.5 rounded-xl bg-primary-container hover:opacity-95 text-on-primary font-bold text-[13px] flex items-center justify-center gap-1.5 shadow-[0_0_16px_rgba(245,158,11,0.3)] transition-all shrink-0">
+        <span class="">MCQ टेस्ट दें</span>
+        <span class="material-symbols-outlined text-[18px]">play_arrow</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Micro-interaction JavaScript for Tab Switching and Quick Navigation -->
+  <script>
+    (function() {
+      const tabSummary = document.getElementById('tab-summary');
+      const tabQA = document.getElementById('tab-qa');
+      const contentSummary = document.getElementById('content-summary');
+      const contentQA = document.getElementById('content-qa');
+      const inlineSwitch = document.getElementById('inline-switch-qa');
+      const bookmarkBtn = document.getElementById('bookmark-btn');
+      let isBookmarked = true;
+
+      function switchMode(toQA) {
+        if (toQA) {
+          tabQA.setAttribute('aria-selected', 'true');
+          tabQA.className = "flex-1 py-2 px-2 rounded-lg font-bold text-[12px] flex items-center justify-center gap-1.5 transition-all bg-primary-container text-on-primary shadow-[0_2px_10px_rgba(245,158,11,0.25)]";
+          
+          tabSummary.setAttribute('aria-selected', 'false');
+          tabSummary.className = "flex-1 py-2 px-2 rounded-lg font-semibold text-[12px] flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-on-surface";
+          
+          contentSummary.classList.add('hidden');
+          contentQA.classList.remove('hidden');
+          contentQA.classList.add('flex');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          tabSummary.setAttribute('aria-selected', 'true');
+          tabSummary.className = "flex-1 py-2 px-2 rounded-lg font-bold text-[12px] flex items-center justify-center gap-1.5 transition-all bg-primary-container text-on-primary shadow-[0_2px_10px_rgba(245,158,11,0.25)]";
+          
+          tabQA.setAttribute('aria-selected', 'false');
+          tabQA.className = "flex-1 py-2 px-2 rounded-lg font-semibold text-[12px] flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-on-surface";
+          
+          contentQA.classList.add('hidden');
+          contentQA.classList.remove('flex');
+          contentSummary.classList.remove('hidden');
+          contentSummary.classList.add('flex');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+
+      tabSummary.addEventListener('click', () => switchMode(false));
+      tabQA.addEventListener('click', () => switchMode(true));
+      if (inlineSwitch) {
+        inlineSwitch.addEventListener('click', () => switchMode(true));
+      }
+
+      // Bookmark Toggle
+      if (bookmarkBtn) {
+        bookmarkBtn.addEventListener('click', () => {
+          isBookmarked = !isBookmarked;
+          const icon = bookmarkBtn.querySelector('.material-symbols-outlined');
+          if (icon) {
+            icon.style.fontVariationSettings = isBookmarked ? "'FILL' 1" : "'FILL' 0";
+            bookmarkBtn.classList.toggle('text-primary-container', isBookmarked);
+            bookmarkBtn.classList.toggle('text-on-surface-variant', !isBookmarked);
+          }
+        });
+      }
+
+      // Font size toggle interaction
+      const fontBtn = document.getElementById('font-size-btn');
+      let fontStep = 0;
+      if (fontBtn) {
+        fontBtn.addEventListener('click', () => {
+          fontStep = (fontStep + 1) % 3;
+          const mainEl = document.querySelector('main');
+          if (fontStep === 1) {
+            mainEl.style.fontSize = '105%';
+          } else if (fontStep === 2) {
+            mainEl.style.fontSize = '112%';
+          } else {
+            mainEl.style.fontSize = '100%';
+          }
+        });
+      }
+    })();
+  </script>
+
+
+
+
+</body></html>

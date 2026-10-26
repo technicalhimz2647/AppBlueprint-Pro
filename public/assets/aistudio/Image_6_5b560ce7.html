@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="hi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#00354a", "primary": "#ffc174", "on-tertiary": "#003824", "inverse-on-surface": "#233143", "surface-container-high": "#1c2b3c", "tertiary-fixed-dim": "#4edea3", "background": "#051424", "on-secondary-fixed-variant": "#004c69", "on-background": "#d4e4fa", "on-secondary-container": "#00374d", "surface-container-highest": "#273647", "error": "#ffb4ab", "on-tertiary-container": "#004e34", "primary-fixed": "#ffddb8", "surface-container-lowest": "#010f1f", "secondary-container": "#00a6e0", "on-primary-fixed-variant": "#653e00", "on-error-container": "#ffdad6", "surface-bright": "#2c3a4c", "on-primary": "#472a00", "inverse-primary": "#855300", "on-secondary-fixed": "#001e2c", "surface": "#051424", "surface-container-low": "#0d1c2d", "secondary-fixed-dim": "#7bd0ff", "surface-container": "#122131", "secondary": "#7bd0ff", "surface-tint": "#ffb95f", "on-tertiary-fixed-variant": "#005236", "on-surface": "#d4e4fa", "on-primary-fixed": "#2a1700", "outline-variant": "#534434", "surface-dim": "#051424", "on-surface-variant": "#d8c3ad", "inverse-surface": "#d4e4fa", "secondary-fixed": "#c4e7ff", "surface-variant": "#273647", "on-primary-container": "#613b00", "tertiary-container": "#30c88f", "on-error": "#690005", "outline": "#a08e7a", "primary-container": "#f59e0b", "tertiary": "#56e5a9", "tertiary-fixed": "#6ffbbe", "on-tertiary-fixed": "#002113", "primary-fixed-dim": "#ffb95f", "error-container": "#93000a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1rem", "margin-tablet": "1.5rem", "gutter": "0.75rem", "gutter-tablet": "1rem", "space-sm": "0.5rem", "margin": "1rem", "space-md": "0.75rem", "space-xs": "0.25rem", "space-xl": "1.5rem" }, "fontFamily": { "headline-lg": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "label-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Space Grotesk"] }, "fontSize": { "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.05em", "fontWeight": "500" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "title-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-low/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><button aria-label="वापस टेस्ट हब जाएँ" class="inline-flex items-center gap-space-xs text-secondary hover:text-primary transition-colors min-h-[44px] min-w-[44px] -ml-space-xs pr-space-xs rounded" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[20px]">arrow_back</span><span class="font-label-lg text-label-lg hidden sm:inline text-on-surface-variant">टेस्ट हब</span></button><img alt="logo-192.png" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XSmN40RTYV24NE-qPhHgjP5WKUTMhF6ioHDqcDAZDRFMEUzwSH3ZNn_9KmLi6PSeqFU2VRd7qq-j4eeq08c78ydil4z0wNVyMvN9nCffyS4OPE_GNgT4uGOwqJdhzwLj7urBOkmlQGnTray5R_nBWRnzaFAnhn3N0ge9LsZEvlCaaYUu11nxhLoVKOMlx1RnF0Yax6l78tGIwtJq28Tj7avvh2zA-aTjGTqCAhyrSlDf9xpss5wrU-7J98-YYbFqmoa3LEtiFEgA"/><div class="flex flex-col min-w-0 pl-space-xs"><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">बिहार मैट्रिक 2027</span></div><h1 class="font-title-md text-title-md text-on-surface font-bold truncate leading-tight">परीक्षा परिणाम एवं समीक्षा</h1><p class="font-label-sm text-label-sm text-on-surface-variant truncate">गोधूलि गद्य • पाठ 1</p></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="शेयर करें" class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">share</span></button><button aria-label="पुनः प्रयास करें" class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">restart_alt</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Interactive Feedback Overlay Container -->
+<div class="fixed top-24 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-all duration-300 transform -translate-y-2 flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-highest text-primary font-label-lg rounded-full shadow-xl border-0" id="toast-notification">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span id="toast-text">स्कोरकार्ड कॉपी हो गया!</span>
+</div>
+<!-- Top Context Header Strip -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-xs text-on-surface-variant">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">auto_stories</span>
+          गोधूलि गद्य • पाठ 1
+        </span>
+<span class="text-on-surface-variant font-label-sm truncate">श्रम विभाजन और जाति प्रथा</span>
+</div>
+<div class="flex-shrink-0 flex items-center gap-1 text-on-surface-variant font-label-sm bg-surface-container-low px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+        आज 04:30 PM • सेट A
+      </div>
+</div>
+</section>
+<!-- Main Hero Score Card -->
+<section class="px-margin pb-space-md">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-b from-surface-container-high via-surface-container to-surface-container-low p-space-lg shadow-xl shadow-surface-container-lowest/50">
+<!-- Ambient Glow Behind Score -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 h-48 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<!-- Top Row: Badge & Percentile Header -->
+<div class="relative flex flex-col items-center text-center">
+<!-- Visual Trophy Ring Gauge -->
+<div class="relative flex items-center justify-center my-space-xs">
+<svg class="w-36 h-36 -rotate-90 transform" viewbox="0 0 120 120">
+<circle class="stroke-surface-container-highest" cx="60" cy="60" fill="none" r="50" stroke-width="8"></circle>
+<circle class="stroke-primary" cx="60" cy="60" fill="none" r="50" stroke-dasharray="314.159" stroke-dashoffset="62.83" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight">16<span class="text-on-surface-variant font-title-sm text-title-sm">/20</span></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">80% कुल अंक</span>
+</div>
+</div>
+<!-- Excellence Pill -->
+<div class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-tertiary-container/20 text-tertiary font-label-lg text-label-lg mt-space-xs">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span>उत्कृष्ट प्रदर्शन! प्रथम श्रेणी</span>
+</div>
+<!-- Rank & Comparison Banner -->
+<div class="w-full mt-space-md py-space-xs px-space-sm rounded-lg bg-surface-container-highest/60 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[16px]">leaderboard</span>
+            मैट्रिक रैंक: <strong class="text-primary font-semibold">#42</strong> / 1,280 छात्र
+          </span>
+<span class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+            94.2% परसेंटाइल
+          </span>
+</div>
+</div>
+<!-- 4-Column Compact Metric Grid -->
+<div class="grid grid-cols-4 gap-space-xs mt-space-md pt-space-md border-t border-surface-container-highest/40">
+<!-- Metric 1: Correct -->
+<div class="flex flex-col items-center text-center p-space-xs rounded-lg bg-surface-container-lowest/60">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-tertiary-container/30 text-tertiary mb-1">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">16</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">सही</span>
+<span class="text-[9px] text-tertiary font-semibold mt-0.5">+16.0</span>
+</div>
+<!-- Metric 2: Incorrect -->
+<div class="flex flex-col items-center text-center p-space-xs rounded-lg bg-surface-container-lowest/60">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-error-container/40 text-error mb-1">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">गलत</span>
+<span class="text-[9px] text-error font-semibold mt-0.5">-0.50</span>
+</div>
+<!-- Metric 3: Skipped -->
+<div class="flex flex-col items-center text-center p-space-xs rounded-lg bg-surface-container-lowest/60">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant mb-1">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">छोड़े</span>
+<span class="text-[9px] text-on-surface-variant font-semibold mt-0.5">0.0</span>
+</div>
+<!-- Metric 4: Pace/Time -->
+<div class="flex flex-col items-center text-center p-space-xs rounded-lg bg-surface-container-lowest/60">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary-container/20 text-primary mb-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">6m</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">समय</span>
+<span class="text-[9px] text-primary font-semibold mt-0.5">18s/प्रश्न</span>
+</div>
+</div>
+<!-- Action Row inside Hero -->
+<div class="flex flex-col sm:flex-row gap-space-sm mt-space-md">
+<button class="flex-1 min-h-[46px] px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary font-title-sm text-title-sm font-bold flex items-center justify-center gap-space-xs shadow-lg shadow-primary-container/20 active:scale-[0.98] transition-all" onclick="filterQuestions('incorrect')" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>गलत प्रश्नों का पुनः अभ्यास (2)</span>
+</button>
+<button class="min-h-[46px] px-space-md py-space-xs rounded-lg bg-surface-container-highest text-on-surface font-title-sm text-title-sm flex items-center justify-center gap-space-xs hover:bg-surface-bright active:scale-[0.98] transition-all" onclick="triggerShareNotification()" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">share</span>
+<span>स्कोरकार्ड</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Filter & Tab Strip for Analysis -->
+<section class="sticky top-20 z-40 bg-surface/95 backdrop-blur-md px-margin py-space-xs border-b border-surface-container-high">
+<div class="flex items-center justify-between mb-space-xs">
+<h2 class="font-title-sm text-title-sm font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">quiz</span>
+        विस्तृत प्रश्न विश्लेषण
+      </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">20 प्रश्न कुल</span>
+</div>
+<!-- Scrollable Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-1 scrollbar-none" id="filter-pills-bar">
+<button class="filter-pill active-pill px-space-md py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1 flex-shrink-0 bg-primary text-on-primary font-bold shadow-sm" data-filter="all" onclick="filterQuestions('all')" type="button">
+<span>सभी</span>
+<span class="text-[10px] opacity-80">(20)</span>
+</button>
+<button class="filter-pill px-space-md py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1 flex-shrink-0 bg-surface-container-high text-tertiary hover:bg-surface-container-highest" data-filter="correct" onclick="filterQuestions('correct')" type="button">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>सही उत्तर</span>
+<span class="text-[10px] text-on-surface-variant">(16)</span>
+</button>
+<button class="filter-pill px-space-md py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1 flex-shrink-0 bg-surface-container-high text-error hover:bg-surface-container-highest" data-filter="incorrect" onclick="filterQuestions('incorrect')" type="button">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+<span>गलत प्रयास</span>
+<span class="text-[10px] text-on-surface-variant">(2)</span>
+</button>
+<button class="filter-pill px-space-md py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1 flex-shrink-0 bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest" data-filter="skipped" onclick="filterQuestions('skipped')" type="button">
+<span class="material-symbols-outlined text-[14px]">help_center</span>
+<span>छोड़े गए</span>
+<span class="text-[10px] text-on-surface-variant">(2)</span>
+</button>
+</div>
+</section>
+<!-- Question List Container -->
+<section class="px-margin py-space-md flex flex-col gap-space-md pb-28" id="questions-list">
+<!-- Card 1: Correct Question Item -->
+<article class="question-item relative rounded-xl bg-surface-container p-space-md flex flex-col gap-space-sm shadow-md" data-type="correct">
+<!-- Card Header -->
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">प्रश्न 1</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">BSEB PYQ 2022</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            सही (+1 अंक)
+          </span>
+<button aria-label="बुकमार्क करें" class="text-on-surface-variant hover:text-primary transition-colors p-1" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+<!-- Question Stem -->
+<h3 class="font-title-md text-title-md text-on-surface font-semibold leading-relaxed">
+        'श्रम विभाजन और जाति प्रथा' के लेखक कौन हैं?
+      </h3>
+<!-- Options -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<!-- Option A (Neutral) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant">A</span>
+<span>महात्मा गांधी</span>
+</div>
+</div>
+<!-- Option B (Chosen & Correct) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-tertiary-container/15 text-tertiary font-body-md text-body-md font-semibold">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-sm text-label-sm font-bold">B</span>
+<span class="text-on-surface">बाबा साहेब भीमराव अंबेडकर</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-tertiary-container/30 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+            आपका सही उत्तर
+          </span>
+</div>
+<!-- Option C (Neutral) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant">C</span>
+<span>डॉ. राममनोहर लोहिया</span>
+</div>
+</div>
+<!-- Option D (Neutral) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant">D</span>
+<span>पंडित बिरजू महाराज</span>
+</div>
+</div>
+</div>
+<!-- Verified Solution Box -->
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-high/70 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[16px]">lightbulb</span>
+<span>विस्तृत व्याख्या एवं तथ्य:</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          'श्रम विभाजन और जाति प्रथा' के लेखक डॉ. भीमराव अंबेडकर हैं। यह पाठ उनके विश्व प्रसिद्ध भाषण <strong class="text-on-surface">"एनिहिलेशन ऑफ कास्ट" (Annihilation of Caste)</strong> का हिंदी रूपांतरण (ललई सिंह यादव द्वारा) का महत्वपूर्ण अंश है।
+        </p>
+</div>
+</article>
+<!-- Card 2: Incorrect Question Item -->
+<article class="question-item relative rounded-xl bg-surface-container p-space-md flex flex-col gap-space-sm shadow-md" data-type="incorrect">
+<!-- Card Header -->
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">प्रश्न 2</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">BSEB मॉडल 2024</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container/30 text-error font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">close</span>
+            गलत (-0.25 अंक)
+          </span>
+<button aria-label="बुकमार्क करें" class="text-on-surface-variant hover:text-primary transition-colors p-1" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+<!-- Question Stem -->
+<h3 class="font-title-md text-title-md text-on-surface font-semibold leading-relaxed">
+        लेखक की दृष्टि में आधुनिक समाज में 'विडंबना' की मुख्य बात क्या है?
+      </h3>
+<!-- Options -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<!-- Option A (Correct Answer) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-tertiary-container/15 text-tertiary font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-sm text-label-sm font-bold">A</span>
+<span class="text-on-surface font-semibold">जातिवाद के पोषकों की कमी नहीं होना</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-tertiary-container/30 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+            सही उत्तर
+          </span>
+</div>
+<!-- Option B (User's Wrong Choice) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-error-container/20 text-error font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-error text-on-error flex items-center justify-center font-label-sm text-label-sm font-bold">B</span>
+<span class="text-on-surface line-through opacity-80">आर्थिक दृष्टि से जातिवाद उचित है</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-error bg-error-container/40 px-2 py-0.5 rounded-full font-bold">
+<span class="material-symbols-outlined text-[13px]">cancel</span>
+            आपका चयन
+          </span>
+</div>
+<!-- Option C (Neutral) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant">C</span>
+<span>लोकतंत्र में जाति का पूर्ण अभाव</span>
+</div>
+</div>
+<!-- Option D (Neutral) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant">D</span>
+<span>इनमें से कोई नहीं</span>
+</div>
+</div>
+</div>
+<!-- Solution Explanation -->
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-high/70 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span>बोर्ड समाधान कुंजी (Master Key):</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          बाबा साहेब के अनुसार 21वीं सदी के वैज्ञानिक युग में भी "जातिवाद के समर्थकों एवं पोषकों की कोई कमी नहीं होना" ही सबसे बड़ी विडंबना है, क्योंकि कार्यकुशलता के नाम पर श्रम विभाजन नहीं बल्कि श्रमिकों का अस्वाभाविक विभाजन किया जाता है।
+        </p>
+</div>
+</article>
+<!-- Card 3: Skipped Question Example -->
+<article class="question-item relative rounded-xl bg-surface-container p-space-md flex flex-col gap-space-sm shadow-md" data-type="skipped">
+<!-- Card Header -->
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">प्रश्न 3</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">BSEB 2020</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">help</span>
+            छोड़ा गया (0 अंक)
+          </span>
+<button aria-label="बुकमार्क करें" class="text-on-surface-variant hover:text-primary transition-colors p-1" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+<!-- Question Stem -->
+<h3 class="font-title-md text-title-md text-on-surface font-semibold leading-relaxed">
+        आधुनिक सभ्य समाज कार्यकुशलता के लिए किसे आवश्यक मानता है?
+      </h3>
+<!-- Options -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<!-- Option A (Correct Answer Highlighted) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-tertiary-container/15 text-tertiary font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-sm text-label-sm font-bold">A</span>
+<span class="text-on-surface font-semibold">श्रम-विभाजन</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">सही उत्तर</span>
+</div>
+<!-- Option B -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant">B</span>
+<span>धन-विभाजन</span>
+</div>
+</div>
+<!-- Option C -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant">C</span>
+<span>जाति-विभाजन</span>
+</div>
+</div>
+<!-- Option D -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant">D</span>
+<span>जन-विभाजन</span>
+</div>
+</div>
+</div>
+<!-- Solution Explanation -->
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-high/70 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>अध्याय संदर्भ:</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          आधुनिक सभ्य समाज कार्यकुशलता के लिए 'श्रम-विभाजन' को आवश्यक मानता है, परंतु जाति प्रथा श्रम विभाजन के साथ-साथ श्रमिकों का भी विभाजन कर देती है जो अवांछनीय है।
+        </p>
+</div>
+</article>
+</section>
+<!-- Sticky Bottom Navigation Bar -->
+<aside class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-low/95 backdrop-blur-xl px-margin py-space-sm shadow-[0_-4px_16px_rgba(0,0,0,0.4)]">
+<div class="max-w-md mx-auto flex items-center gap-space-sm">
+<!-- Back to Dashboard / Hub -->
+<button class="min-h-[46px] px-space-md py-space-xs rounded-lg bg-surface-container-highest text-on-surface font-title-sm text-title-sm flex items-center justify-center gap-1 hover:bg-surface-bright active:scale-[0.98] transition-all flex-shrink-0" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[18px]">home</span>
+<span class="hidden xs:inline">होम</span>
+</button>
+<!-- Next Chapter Recommendation Action -->
+<button class="flex-1 min-h-[46px] px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary font-title-sm text-title-sm font-bold flex items-center justify-center justify-between gap-space-xs shadow-lg shadow-primary-container/20 active:scale-[0.98] transition-all" type="button">
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-primary-container font-semibold uppercase">अगला अध्याय पढ़ें</span>
+<span class="font-title-sm text-title-sm text-on-primary truncate">पाठ 2: विष के दांत</span>
+</div>
+<span class="material-symbols-outlined text-[20px] flex-shrink-0">arrow_forward</span>
+</button>
+</div>
+</aside>
+<!-- Embedded Client Logic for Interactive Filtering & Feedback -->
+<script>
+    function filterQuestions(type) {
+      // Update Active Pill UI
+      const pills = document.querySelectorAll('.filter-pill');
+      pills.forEach(pill => {
+        if (pill.getAttribute('data-filter') === type) {
+          pill.className = 'filter-pill active-pill px-space-md py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1 flex-shrink-0 bg-primary text-on-primary font-bold shadow-sm transition-all';
+        } else {
+          pill.className = 'filter-pill px-space-md py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1 flex-shrink-0 bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-all';
+        }
+      });
+
+      // Filter Question Articles
+      const cards = document.querySelectorAll('.question-item');
+      cards.forEach(card => {
+        if (type === 'all' || card.getAttribute('data-type') === type) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function triggerShareNotification() {
+      const toast = document.getElementById('toast-notification');
+      toast.classList.remove('opacity-0', '-translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', '-translate-y-2');
+      }, 2200);
+    }
+  </script>
+</div></main></body></html>
